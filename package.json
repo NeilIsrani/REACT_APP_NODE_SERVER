@@ -1,0 +1,19 @@
+{
+  "name": "kanbas-node-server-app",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axiom": "^0.1.6",
+    "axios": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
