@@ -11,7 +11,7 @@ import "dotenv/config";
 import UserRoutes from "./Users/routes.js";
 import * as dao from "./Users/dao.js";
 
-const MONGO_CONNECTION_STRING = "mongodb+srv://neilisrani:123456.@kanbas.jl0kl.mongodb.net/?retryWrites=true&w=majority&appName=Kanbas"
+const MONGO_CONNECTION_STRING = "mongodb+srv://neilisrani:123456.@kanbas.jl0kl.mongodb.net/kanbas?retryWrites=true&w=majority&appName=Kanbas"
 
 mongoose.connect(MONGO_CONNECTION_STRING);
 const app = express();
