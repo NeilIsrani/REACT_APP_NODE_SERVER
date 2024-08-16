@@ -8,7 +8,7 @@ export default function ModuleRoutes(app) {
 
 
   app.post("/api/courses/:cid/modules", async (req, res) => {
-    const module = await dao.createModule({ ...req.body, course: req.params.cid });
+    const module = await dao.createModule({ ...req.body, course: req.params.cid, description: "description 234" });
     res.json(module);
   });
 
