@@ -1,5 +1,5 @@
 import * as dao from "./dao.js";
-import * as dao from "./dao.js";
+
 export default function ModuleRoutes(app) {
   app.get("/api/courses/:cid/modules", async (req, res) => {
     const modules = await dao.findModulesByCourse(req.params.cid);
