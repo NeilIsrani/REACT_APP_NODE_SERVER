@@ -11,4 +11,4 @@ const courseSchema = new mongoose.Schema({
   description: { type: String, required: true }
 }, { collection: "courses" });
 
-export default mongoose.model("Course", courseSchema);
+export default courseSchema;
