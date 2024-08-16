@@ -15,4 +15,4 @@ const moduleSchema = new mongoose.Schema({
   lessons: [lessonSchema]  
 }, { collection: "modules" });
 
-export default mongoose.model("Module", moduleSchema);
+export default moduleSchema;
