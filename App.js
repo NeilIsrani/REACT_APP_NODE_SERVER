@@ -16,7 +16,7 @@ const MONGO_CONNECTION_STRING = "mongodb+srv://neilisrani:123456.@kanbas.jl0kl.m
 mongoose.connect(MONGO_CONNECTION_STRING);
 const app = express();
 app.use(cors({credentials: true,
-  origin: process.env.NETLIFY_URL,
+  origin: process.env.NETLIFY_URL || "http://localhost:3000",
 }));
 
 const sessionOptions = {
