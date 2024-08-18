@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wd-kanbas {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px; /* Add padding for spacing */
+  overflow-y: auto; /* Ensure content is scrollable */
+  margin-left: 0; /* Remove margin to avoid pushing content to the right */
+}
+
+.course-navigation {
+  margin-left: 150px; /* Adjust this value to push the course navigator further right */
+}
+
+@media (min-width: 768px) {
+  #wd-kanbas .main-content {
+    padding-left: 200px; /* Adjust padding as needed */
+  }
+}
+
+#wd-courses-navigation > .list-group-item.active {
+  color: black;
+  background-color: white;
+  border-left: 5px solid black !important;
+}
+
+/* Restore space and smallspace classes */
+.space {
+  margin: 0 140px;
+}
+
+.spacer {
+  margin: 0 250px;
+}
+
+.smallspace {
+  margin: 0 5px;
+}
+
+/* Add styles for breadcrumb */
+#wd-courses h2 {
+  margin: 20px 0; /* Adjust top and bottom margins as needed */
+  padding-left: 100px; /* Push the breadcrumb a bit right */
+}
+
+.assignment-header {
+  display: flex;
+  align-items: left; /* Vertically center items */
+  justify-content: space-between; /* Space between text and control buttons */
+  width: 100%; /* Ensure the header takes full width */
+}
+
+.wd-assignment-link {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  text-decoration: none; /* Remove underline from links */
+  flex-grow: 1; 
+}
+
+.wd-assignment-link strong {
+  margin-left: 10px; /* Adjust as needed for spacing between text and icons */
+}
+
+/* Font sizes for icons */
+.fs-3 {
+  font-size: 1.5rem; /* Adjust as needed */
+}
+
+.fs-4 {
+  font-size: 2rem; /* Adjust as needed */
+}
+
+/* Ensure text alignment */
+#wd-assignments-title {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.delete-btn {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.90rem;
+  line-height: 1;
+  margin-left: auto; /* This will push the button to the right */
+}
