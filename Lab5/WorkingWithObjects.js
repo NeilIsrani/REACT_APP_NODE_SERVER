@@ -14,6 +14,7 @@ const module = {
       res.json(assignment);
     });
     app.get("/lab5/assignment/title", (req, res) => {
+      console.log(assignment.title);
       res.json(assignment.title);
     });
     app.get("/lab5/assignment/title/:newTitle", (req, res) => {
