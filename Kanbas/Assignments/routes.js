@@ -1,5 +1,4 @@
 import Database from "../Database/index.js";
-
 export default function AssignmentRoutes(app) {
   app.post("/api/courses/:cid/assignments", (req, res) => {
     const { cid } = req.params;
@@ -11,6 +10,16 @@ export default function AssignmentRoutes(app) {
     }
     Database.assignments.push(newAssignment);
     res.send(newAssignment);
+  });
+  
+  app.get("/api/courses/:courseId", (req, res) => {
+    const { courseId } = req.params;
+    const course = Database.courses.find((c) => c._id === courseId);
+    if (course) {
+      res.json(course);
+    } else {
+      res.status(404).send("Course not found");
+    }
   });
   app.get("/api/courses/:cid/assignments", (req, res) => {
     const { cid } = req.params;
